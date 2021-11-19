@@ -51,5 +51,5 @@
                                              (println " количество пациентов в группе - " (count patients-group))
                                              (println " фамилии пациентов - " (str/join ", " (map :lastname patients-group)))
                                              (count patients-group))]
-                       (is (= res [2 1 1 1]))))]
+                       (is (= res '(2 1 1 1)))))]
     (is (= output output-res))))
